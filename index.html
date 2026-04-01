@@ -7,7 +7,7 @@
   <title>Md Mustafijur Rahman | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -50,11 +50,12 @@
   </header>
 
   <main id="main-content">
-    <section class="hero section" id="hero" aria-labelledby="hero-title">
+    <section class="hero section hero-section" id="hero" aria-labelledby="hero-title">
+      <div class="hero-backdrop" aria-hidden="true"></div>
       <div class="container hero-grid fade-in">
         <div class="hero-content">
           <p class="eyebrow">Front-End Developer</p>
-          <h1 id="hero-title">Building thoughtful digital experiences.</h1>
+          <h1 id="hero-title">Building <span class="text-gradient">thoughtful digital experiences.</span></h1>
           <p class="hero-text">
             I design and develop accessible, responsive interfaces with clean code and a strong focus on user experience.
           </p>
@@ -64,18 +65,21 @@
           </div>
         </div>
         <div class="hero-image-wrap">
+          <div class="hero-image-frame">
           <img
             class="hero-image"
             src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1000&q=80"
             alt="Developer collaborating at a modern workspace"
             loading="lazy"
           >
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="about section" id="about" aria-labelledby="about-title">
+    <section class="about section section--soft" id="about" aria-labelledby="about-title">
       <div class="container fade-in">
+        <p class="section-label">Introduction</p>
         <h2 id="about-title">About Me</h2>
         <p>
           I am a developer who enjoys turning ideas into polished, user-friendly products. My work combines visual design sensibility with practical engineering to build maintainable web experiences.
@@ -85,6 +89,7 @@
 
     <section class="skills section" id="skills" aria-labelledby="skills-title">
       <div class="container fade-in">
+        <p class="section-label">Capabilities</p>
         <h2 id="skills-title">Skills</h2>
         <div class="skills-grid">
           <article class="card">
@@ -103,10 +108,13 @@
       </div>
     </section>
 
-    <section class="projects section" id="projects" aria-labelledby="projects-title">
+    <section class="projects section section--soft" id="projects" aria-labelledby="projects-title">
       <div class="container fade-in">
         <div class="projects-head">
-          <h2 id="projects-title">Projects</h2>
+          <div>
+            <p class="section-label">Selected work</p>
+            <h2 id="projects-title">Projects</h2>
+          </div>
           <div class="filters" aria-label="Project filters">
             <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All</button>
             <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Web</button>
@@ -117,11 +125,13 @@
 
         <div class="projects-grid" id="projects-grid">
           <article class="project-card" data-category="web">
+            <div class="project-thumb">
             <img
               src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80"
               alt="Analytics dashboard interface preview"
               loading="lazy"
             >
+            </div>
             <div class="project-body">
               <h3>Analytics Dashboard</h3>
               <p>A responsive dashboard with data visualization and adaptive layouts.</p>
@@ -130,11 +140,13 @@
           </article>
 
           <article class="project-card" data-category="ui">
+            <div class="project-thumb">
             <img
               src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80"
               alt="High-fidelity design system mockups"
               loading="lazy"
             >
+            </div>
             <div class="project-body">
               <h3>Design System Kit</h3>
               <p>A reusable UI library focused on consistency and accessibility.</p>
@@ -143,11 +155,13 @@
           </article>
 
           <article class="project-card" data-category="tool">
+            <div class="project-thumb">
             <img
               src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80"
               alt="Developer tooling and code editor setup"
               loading="lazy"
             >
+            </div>
             <div class="project-body">
               <h3>Developer CLI Helper</h3>
               <p>A lightweight productivity tool for automating repetitive tasks.</p>
@@ -158,8 +172,9 @@
       </div>
     </section>
 
-    <section class="contact section" id="contact" aria-labelledby="contact-title">
+    <section class="contact section contact-section" id="contact" aria-labelledby="contact-title">
       <div class="container fade-in">
+        <p class="section-label">Let’s talk</p>
         <h2 id="contact-title">Contact</h2>
         <p>Have a project in mind? Send a message.</p>
 
