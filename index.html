@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio website showcasing projects, skills, and contact information.">
+  <title>Md Mustafijur Rahman | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Go to top of page">Md Mustafijur Rahman</a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="nav-list"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button
+        class="theme-toggle"
+        id="theme-toggle"
+        type="button"
+        aria-label="Toggle dark and light mode"
+      >
+        <span aria-hidden="true">🌙</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section" id="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid fade-in">
+        <div class="hero-content">
+          <p class="eyebrow">Front-End Developer</p>
+          <h1 id="hero-title">Building thoughtful digital experiences.</h1>
+          <p class="hero-text">
+            I design and develop accessible, responsive interfaces with clean code and a strong focus on user experience.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-image-wrap">
+          <img
+            class="hero-image"
+            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1000&q=80"
+            alt="Developer collaborating at a modern workspace"
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about" aria-labelledby="about-title">
+      <div class="container fade-in">
+        <h2 id="about-title">About Me</h2>
+        <p>
+          I am a developer who enjoys turning ideas into polished, user-friendly products. My work combines visual design sensibility with practical engineering to build maintainable web experiences.
+        </p>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills" aria-labelledby="skills-title">
+      <div class="container fade-in">
+        <h2 id="skills-title">Skills</h2>
+        <div class="skills-grid">
+          <article class="card">
+            <h3>Frontend</h3>
+            <p>HTML5, CSS3, JavaScript (ES6+), Responsive Design, Accessibility (WCAG)</p>
+          </article>
+          <article class="card">
+            <h3>Tools</h3>
+            <p>Git, GitHub, Figma, VS Code, Browser DevTools</p>
+          </article>
+          <article class="card">
+            <h3>Workflow</h3>
+            <p>Component-based architecture, performance optimization, semantic markup</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects" aria-labelledby="projects-title">
+      <div class="container fade-in">
+        <div class="projects-head">
+          <h2 id="projects-title">Projects</h2>
+          <div class="filters" aria-label="Project filters">
+            <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Web</button>
+            <button class="filter-btn" type="button" data-filter="ui" aria-pressed="false">UI</button>
+            <button class="filter-btn" type="button" data-filter="tool" aria-pressed="false">Tools</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <article class="project-card" data-category="web">
+            <img
+              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80"
+              alt="Analytics dashboard interface preview"
+              loading="lazy"
+            >
+            <div class="project-body">
+              <h3>Analytics Dashboard</h3>
+              <p>A responsive dashboard with data visualization and adaptive layouts.</p>
+              <a href="#" aria-label="Open Analytics Dashboard project details">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="ui">
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80"
+              alt="High-fidelity design system mockups"
+              loading="lazy"
+            >
+            <div class="project-body">
+              <h3>Design System Kit</h3>
+              <p>A reusable UI library focused on consistency and accessibility.</p>
+              <a href="#" aria-label="Open Design System Kit project details">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="tool">
+            <img
+              src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80"
+              alt="Developer tooling and code editor setup"
+              loading="lazy"
+            >
+            <div class="project-body">
+              <h3>Developer CLI Helper</h3>
+              <p>A lightweight productivity tool for automating repetitive tasks.</p>
+              <a href="#" aria-label="Open Developer CLI Helper project details">View Project</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <div class="container fade-in">
+        <h2 id="contact-title">Contact</h2>
+        <p>Have a project in mind? Send a message.</p>
+
+        <form id="contact-form" novalidate aria-label="Contact form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required aria-required="true">
+            <small class="error-message" id="name-error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required aria-required="true">
+            <small class="error-message" id="email-error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+            <small class="error-message" id="message-error" aria-live="polite"></small>
+          </div>
+
+          <button class="btn primary" type="submit">Send Message</button>
+          <p class="form-status" id="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Md Mustafijur Rahman. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
